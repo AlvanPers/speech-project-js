@@ -1,0 +1,44 @@
+html {
+    font-family: Thin, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    color: var(--secondary-color);
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    background: #ecdaae;
+    border: #ecdaae;
+}
+
+.wrapper {
+    background: #ecdaae;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #ecdaae;
+}
+
+.speech {
+    width: 1024px;
+    align-items: center;
+    justify-content: center;
+    background: #EDF2EC;
+    padding: 10px 5px 10px 5px;
+
+}
