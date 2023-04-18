@@ -18,6 +18,7 @@ body {
 select {
     background: #ecdaae;
     border: #ecdaae;
+    margin: 5px;
 }
 
 .wrapper {
@@ -50,5 +51,28 @@ select {
 @media(max-width: 1440px) {
     .speech {
         padding: calc(10px * (100vw - 320px)/(1440 - 320));
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .wrapper {
+        width: 450px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .wrapper {
+        width: 320px;
+    }
+
+    .header {
+        width: 320px;
+    }
+
+    h4 {
+        font-size: calc(150 * (100vw - 320px)/(1440 - 320));
     }
 }
