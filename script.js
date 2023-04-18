@@ -53,7 +53,7 @@ function doc() {
         // console.log(`${phraseArr[randOne][0]} ${phraseArr[randTwo][1]} ${phraseArr[randThree][2]} ${phraseArr[randFour][3]}. `);
         // document.writeln(`${phraseArr[randOne][0]} ${phraseArr[randTwo][1]} ${phraseArr[randThree][2]} ${phraseArr[randFour][3]}. `);
 
-        value = value + phraseArr[randOne][0] + phraseArr[randTwo][1] + phraseArr[randThree][2] + phraseArr[randFour][3];
+        value = value + phraseArr[randOne][0] + phraseArr[randTwo][1] + phraseArr[randThree][2] + phraseArr[randFour][3] + '.';
         // console.log(value);
 
 
