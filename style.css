@@ -32,7 +32,8 @@ select {
     overflow: hidden;
     white-space: nowrap;
     /* Запрещаем переносы слов */
-    animation: marquee 20s linear infinite alternate;
+    animation: marquee 20s linear infinite;
+    /*возврат текста назад - alternate */
     background: #ecdaae;
     padding: 5px;
     width: 60%;
@@ -66,7 +67,7 @@ select {
     }
 
     to {
-        text-indent: 0;
+        text-indent: -100%;
     }
 }
 
@@ -75,7 +76,6 @@ select {
         padding: calc(10px * (100vw - 320px)/(1440 - 320));
     }
 }
-
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
