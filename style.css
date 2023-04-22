@@ -88,7 +88,7 @@ select {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .wrapper {
-        width: 480px;
+        width: 320px;
     }
 
     .header {
