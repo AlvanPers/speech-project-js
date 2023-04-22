@@ -11,7 +11,7 @@ const lozung = [
     ['Народ и партия - едины, В любой борьбе непобедимы! '],
     ['За тепло и ласку И за детский сад Партии спасибо Ото всех ребят!'],
     ['Не можешь - научим, не хочешь - заставим: позорить отряд не дадим!'],
-    ['Хочешь быть передовым? Сей квадратно гнездовым!'],
+    ['Хочешь быть передовым - сей квадратно гнездовым!'],
     ['Наша главная задача - молотьба и хлебосдача!'],
     ['Самогон ваш враг - Гоните его! '],
     ['Если делать - то по-большому!'],
@@ -46,23 +46,16 @@ let value = phraseArr[0][0];
 const select1 = document.querySelector('.select-1');
 
 function marqueescrpt() {
-
     randLozung = Math.floor(Math.random() * lozung.length);
     document.getElementById('marquee').innerHTML = lozung[randLozung];
-
+    setTimeout(marqueescrpt, 30000);
 }
-
 
 marqueescrpt();
 doc();
+
 select1.onchange = function () {
     let item = Number(select1.value);
-    // console.log(item);
-    // let index = select1.selectedIndex;
-    // console.log(index);
-    // let options = select1.options;
-    // console.log(options[index].value);
-
     indexPhrase = Number(this.value);
     console.log(indexPhrase);
     doc();
@@ -90,8 +83,6 @@ function doc() {
         // document.writeln(`${phraseArr[randOne][0]} ${phraseArr[randTwo][1]} ${phraseArr[randThree][2]} ${phraseArr[randFour][3]}. `);
 
         value = value + phraseArr[randOne][0] + phraseArr[randTwo][1] + phraseArr[randThree][2] + phraseArr[randFour][3] + '.';
-        // console.log(value);
-
 
         cashOneColumn = phraseArr[randOne][0];
         cashTwoColumn = phraseArr[randTwo][1];

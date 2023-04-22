@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-between;
 }
 
 select {
@@ -25,20 +25,18 @@ select {
     background: #ecdaae;
     margin: 0px auto;
     max-width: 1440px;
-
 }
 
 .marquee {
     overflow: hidden;
     white-space: nowrap;
     /* Запрещаем переносы слов */
-    animation: marquee 20s linear infinite;
+    animation: marquee 15s linear infinite;
     /*возврат текста назад - alternate */
     background: #ecdaae;
     padding: 5px;
-    width: 60%;
+    width: 70%;
     /* border: #000 2px solid; */
-
 }
 
 .header {
@@ -48,7 +46,6 @@ select {
     justify-content: space-around;
     flex-wrap: nowrap;
     background: #ecdaae;
-
 }
 
 .speech {
@@ -58,7 +55,6 @@ select {
     justify-content: center;
     background: #EDF2EC;
     padding: 10px 15px 10px 15px;
-
 }
 
 @keyframes marquee {
@@ -67,7 +63,7 @@ select {
     }
 
     to {
-        text-indent: -100%;
+        text-indent: -150%;
     }
 }
 
@@ -82,23 +78,21 @@ select {
     .wrapper {
         width: 450px;
     }
+
+    .header {
+        width: 450px;
+        font-size: 0.8em;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     .wrapper {
-        width: 320px;
+        width: 480px;
     }
 
     .header {
-        width: 320px;
-    }
-
-    h4 {
-        font-size: calc(150 * (100vw - 320px)/(1440 - 320));
-    }
-
-    .marquee {
-        width: 320px;
+        /* width: 320px; */
+        font-size: 0.75em;
     }
 }
