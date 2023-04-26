@@ -17,10 +17,12 @@
 
     <div class="wrapper">
         <div class="header">
-            <form style="text-align: center;">
-                <input type="button" value="Refresh" style="background: #ecdaae; border: 1px;"
-                    onClick="location.href='/speech-project-js/index.html'">
-            </form>
+            <div class="refresh">
+                <form>
+                    <input type="button" class="refresh_button" value="Refresh"
+                        onClick="location.href='/speech-project-js/index.html'">
+                </form>
+            </div>
             <!-- <h4>Универсальный код речи</h4> -->
             <div class="marquee" id="marquee" onload="marqueescrpt()" onclick="marqueescrpt()"> </div>
 

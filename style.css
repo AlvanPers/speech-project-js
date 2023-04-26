@@ -48,6 +48,16 @@ select {
     background: #ecdaae;
 }
 
+.refresh {
+    align-items: center;
+}
+
+.refresh_button {
+    /* text-align: center; */
+    background: #ecdaae;
+    border: 1px;
+}
+
 .speech {
     max-width: 1024px;
     height: auto;
