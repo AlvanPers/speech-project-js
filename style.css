@@ -92,7 +92,7 @@ select {
     }
 
     .header {
-        /* width: 320px; */
+        width: 320px;
         font-size: 0.75em;
     }
 }
