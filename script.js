@@ -234,8 +234,16 @@ function marqueescrpt() {
     setTimeout(marqueescrpt, 30000);
 }
 
+function mayakovskyscrpt() {
+    randmayak = Math.floor(Math.random() * mayakovsky.length);
+    document.getElementById('mayakovsky').innerHTML = mayakovsky[randmayak];
+    setTimeout(mayakovskyscrpt, 50000);
+}
+
+
 marqueescrpt();
 doc();
+mayakovskyscrpt();
 
 select1.onchange = function () {
     let item = Number(select1.value);
